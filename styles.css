@@ -1,0 +1,224 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #dbe7e1;
+  color: #1a3344;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+}
+
+/* Main Container Card */
+.page-card {
+  width: 100%;
+  max-width: 680px;
+  background-color: #f3f9f5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-image: url("https://www.goroadtrip.com/wp-content/uploads/2018/01/Temple-of-Thindal-Murugan.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 440px;
+}
+
+.badge-title {
+  background-color: #4a849f;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 8px 22px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+.badge-subtitle {
+  background-color: #1f3b58;
+  color: #ffffff;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 10px 18px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Activities Section */
+.activities-section {
+  padding: 36px 28px 24px 28px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #14354c;
+  margin-bottom: 30px;
+}
+
+.activities-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.activity-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.activity-card h3 {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #15374e;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-card p {
+  font-size: 11px;
+  color: #3f5564;
+  line-height: 1.45;
+}
+
+/* Guide Section */
+.guide-section {
+  padding: 12px 28px 40px 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-card {
+  background-color: #9ec8cf;
+  border-bottom: 6px solid #487888;
+  border-radius: 20px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 440px;
+  object-fit: 20px;
+}
+
+.guide-photo {
+  width: 125px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+   border-radius: 400px; 
+}
+
+.guide-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guide-info h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a3c4f;
+  margin-bottom: 8px;
+}
+
+.guide-info blockquote {
+  font-size: 11.5px;
+  font-style: italic;
+  line-height: 1.45;
+  color: #1c3b4d;
+  margin-bottom: 14px;
+}
+
+.guide-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1a3c4f;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 540px) {
+  .activities-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .guide-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .guide-info {
+    text-align: center;
+  }
+}
